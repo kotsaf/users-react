@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.main-aside {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12vh;
+}
+
+.header {
+    background-color: #222;
+    padding: 25px 100px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 8px;   
+    position: fixed; 
+    width: 100%;
+    z-index: 1;
+    height: 3vh;
+}
+
+main {
+    margin: 10px 100px;
+    width: 50%;
+    float: left;
+}
+
+aside {
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 5%;
+    float: left;
+}
+
+main .user {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    background-color: #3e8fa0;
+    padding: 20px;
+    height: 160px;
+}
+main .user-text {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 4px;
+}
+main .img-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 20%;
+    justify-content: center;
+    align-content: stretch;
+}
+main .btns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+main .delete-icon, .edit-icon {
+    margin: 0px;
+    width: 50%;
+    color: #134b57;
+    cursor: pointer;
+    transform: scale(2);
+}
+
+main .delete-icon:hover,
+main .edit-icon:hover {
+    opacity: 0.5;
+}
+
+main .user img {
+    float: right;
+    width: px;
+    grid-column: span 2 / span 2;
+    grid-row-start: 2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 12vh;
+}
+form input:not([type='checkbox']), 
+form textarea {
+    width: 90%;
+    padding:  15px 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+    border: 0;
+    background: #222;
+    color: #fff;
+    outline: none;
+    font-size: 15px;
+}
+form button {
+    text-align: center;
+    padding:  15px 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-bottom: 10px;
+    border: 0;
+    background: #222;
+    width: 60%;
+    color: #fff;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: transform 500ms ease;
+}
+form button:hover {
+    transform: scale(1.1);
+}
+
+.user form {
+    margin-top: 20px;
+}
+
+.user form input,
+.user form textarea,
+.user form button {
+    background: #134b57;
+}
+
+
+.user form button:hover {
+    transform: scale(1.01);
+}
+
+footer {
+    height: 30vh;
+    background-color: #222;
+}
