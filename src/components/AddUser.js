@@ -1,5 +1,6 @@
 import React from "react"
 
+// форма для добавления пользователя
 class AddUser extends React.Component {
     userAdd = {}
     constructor(props) {
