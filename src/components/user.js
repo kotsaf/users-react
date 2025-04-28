@@ -2,6 +2,7 @@ import React from "react"
 import AddUser from "./AddUser"
 import { IoCloseCircleSharp, IoHammerSharp } from "react-icons/io5"
 
+// модель юзера
 class User extends React.Component {
     constructor(props) {
         super(props)
