@@ -1,6 +1,7 @@
 import React from "react"
 import User from "./user"
 
+// пользователи
 class Users extends React.Component {
 
     render() {
